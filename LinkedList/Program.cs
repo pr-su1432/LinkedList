@@ -12,6 +12,12 @@ namespace LinkedList
             list.Add(30);
             list.Add(70);
             list.DisPlay();
+            int a = list.Search(30);
+            Console.WriteLine("index position of element 30 is: " + a);
+            list.InsertAtPerticularPosition(a + 1, 40);
+            list.DisPlay();
+
+
 
         }
     }
