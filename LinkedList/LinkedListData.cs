@@ -27,12 +27,6 @@ namespace LinkedList
             }
             Console.WriteLine("{0} inserted into linked list", node.data);
         }
-
-        internal void InsertAtPerticularPosition(int v)
-        {
-            throw new NotImplementedException();
-        }
-
         public void DisPlay()
         {
             Node temp = this.head;
@@ -93,6 +87,15 @@ namespace LinkedList
                 count++;
             }
             return count;
+        }
+        public Node RemoveFirstNode(int value)
+        {
+            if(this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
         }
     }
 }
