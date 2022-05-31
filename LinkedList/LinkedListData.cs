@@ -115,5 +115,20 @@ namespace LinkedList
             NewNode.next = null;
             return head;
         }
+        public void AddMethod(int data)
+        {
+            Node node = new Node(data);
+            if(this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                node.next = this.head;
+                head = node;
+            }
+            Console.WriteLine("{0} inserted into linked list", node.data);
+        }
+
     }
 }

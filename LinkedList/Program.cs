@@ -8,8 +8,8 @@ namespace LinkedList
         {
             Console.WriteLine("Hello, World!");
             LinkedListData list = new LinkedListData();
-            list.Add(56);
-            list.Add(30);
+            //list.Add(56);
+            //list.Add(30);
             list.Add(70);
             //list.DisPlay();
             //int a = list.Search(30);
@@ -17,7 +17,10 @@ namespace LinkedList
             //list.InsertAtPerticularPosition(a + 1, 40);
             //list.DisPlay();
             //list.RemoveFirstNode(56);
-            list.RemoveLastNode(70);
+            //list.RemoveLastNode(70);
+            //list.DisPlay();
+            list.AddMethod(30);
+            list.AddMethod(56);
             list.DisPlay();
 
 
